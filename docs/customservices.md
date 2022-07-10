@@ -116,7 +116,7 @@ API key can be generated in Settings > Administration > Auth Tokens
 
 ## Ping
 
-For Ping you need to set the type to Ping and provide a url.
+For Ping you need to set the type to Ping and provide a url. By default the HEAD method is used but it can be configured to use GET using the optional `method` property.
 
 ```yaml
 - name: "Awesome app"
@@ -125,6 +125,7 @@ For Ping you need to set the type to Ping and provide a url.
   subtitle: "Bookmark example"
   tag: "app"
   url: "https://www.reddit.com/r/selfhosted/"
+  method: "head"
 ```
 
 ## Prometheus
